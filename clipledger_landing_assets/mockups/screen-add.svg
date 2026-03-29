@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="1320" viewBox="0 0 620 1320" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="620" y2="1320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#edf2ff"/>
+      <stop offset="0.48" stop-color="#fff6eb"/>
+      <stop offset="1" stop-color="#f2fff8"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="420" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1c6bff"/>
+      <stop offset="1" stop-color="#4fc3ff"/>
+    </linearGradient>
+    <filter id="shadow" x="10" y="20" width="600" height="1280" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#25203a" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <rect width="620" height="1320" fill="none"/>
+  <g filter="url(#shadow)">
+    <rect x="30" y="36" width="560" height="1248" rx="58" fill="#1A1725"/>
+  </g>
+  <rect x="52" y="80" width="516" height="1160" rx="40" fill="url(#bg)"/>
+  <rect x="228" y="98" width="164" height="24" rx="12" fill="#181421"/>
+
+  <g>
+    <text x="68" y="176" font-family="Inter, Arial, sans-serif" font-size="22" fill="#2e2941" font-weight="700">Capture pipeline</text>
+    <text x="68" y="220" font-family="Inter, Arial, sans-serif" font-size="48" fill="#1f1b2f" font-weight="800">Add Transaction</text>
+    <rect x="428" y="156" width="124" height="44" rx="22" fill="rgba(255,255,255,0.76)" stroke="rgba(255,255,255,0.88)"/>
+    <text x="490" y="184" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" fill="#2a2440" font-weight="800">FAST</text>
+  </g>
+
+  <rect x="52" y="252" width="516" height="88" rx="18" fill="url(#accent)"/>
+  <text x="78" y="305" font-family="Inter, Arial, sans-serif" font-size="28" fill="white" font-weight="800">Monely iOS Snapshot</text>
+
+  <rect x="56" y="324" width="122" height="34" rx="17" fill="rgba(255,255,255,0.74)"/>
+<text x="116" y="346" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#2d2b3a" font-weight="700">Import PDF</text>
+<rect x="188" y="324" width="122" height="34" rx="17" fill="rgba(255,255,255,0.74)"/>
+<text x="248" y="346" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#2d2b3a" font-weight="700">Scan Camera</text>
+<rect x="320" y="324" width="122" height="34" rx="17" fill="rgba(255,255,255,0.74)"/>
+<text x="380" y="346" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#2d2b3a" font-weight="700">Share URL</text>
+  
+  <g>
+    <rect x="50" y="392" width="520" height="184" rx="22" fill="rgba(255,255,255,0.85)" stroke="rgba(255,255,255,0.78)"/>
+    <text x="78" y="434" font-family="Inter, Arial, sans-serif" font-size="18" fill="#56516b" font-weight="700">Source</text>
+    <text x="78" y="476" font-family="Inter, Arial, sans-serif" font-size="30" fill="#1f1b2f" font-weight="800">Image / PDF / URL</text>
+    <rect x="78" y="504" width="464" height="12" rx="6" fill="#ece9f5"/>
+    <rect x="78" y="504" width="220" height="12" rx="6" fill="url(#accent)"/>
+    <text x="78" y="548" font-family="Inter, Arial, sans-serif" font-size="20" fill="#262039" font-weight="700">Ready</text>
+  </g>
+
+  <g>
+    <rect x="50" y="596" width="520" height="184" rx="22" fill="rgba(255,255,255,0.85)" stroke="rgba(255,255,255,0.78)"/>
+    <text x="78" y="638" font-family="Inter, Arial, sans-serif" font-size="18" fill="#56516b" font-weight="700">OCR Status</text>
+    <text x="78" y="680" font-family="Inter, Arial, sans-serif" font-size="30" fill="#1f1b2f" font-weight="800">Text extracted</text>
+    <rect x="78" y="708" width="464" height="12" rx="6" fill="#ece9f5"/>
+    <rect x="78" y="708" width="295" height="12" rx="6" fill="url(#accent)"/>
+    <text x="78" y="752" font-family="Inter, Arial, sans-serif" font-size="20" fill="#262039" font-weight="700">96% confidence</text>
+  </g>
+
+  <g>
+    <rect x="50" y="800" width="520" height="184" rx="22" fill="rgba(255,255,255,0.85)" stroke="rgba(255,255,255,0.78)"/>
+    <text x="78" y="842" font-family="Inter, Arial, sans-serif" font-size="18" fill="#56516b" font-weight="700">Classification</text>
+    <text x="78" y="884" font-family="Inter, Arial, sans-serif" font-size="30" fill="#1f1b2f" font-weight="800">Expense</text>
+    <rect x="78" y="912" width="464" height="12" rx="6" fill="#ece9f5"/>
+    <rect x="78" y="912" width="370" height="12" rx="6" fill="url(#accent)"/>
+    <text x="78" y="956" font-family="Inter, Arial, sans-serif" font-size="20" fill="#262039" font-weight="700">Merchant + Total</text>
+  </g>
+
+
+</svg>

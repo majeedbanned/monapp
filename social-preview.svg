@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fffdf9"/>
+      <stop offset="1" stop-color="#f4f7fb"/>
+    </linearGradient>
+    <linearGradient id="card" x1="76" y1="72" x2="1124" y2="558" gradientUnits="userSpaceOnUse">
+      <stop stop-color="rgba(255,255,255,0.94)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0.82)"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#ff6a60"/>
+      <stop offset="1" stop-color="#4f89ff"/>
+    </linearGradient>
+    <filter id="shadow" x="32" y="40" width="1136" height="550" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#20304a" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="148" cy="120" r="110" fill="#ffded8"/>
+  <circle cx="1036" cy="118" r="126" fill="#e1ebff"/>
+  <circle cx="960" cy="520" r="138" fill="#dff5ee"/>
+  <circle cx="208" cy="524" r="124" fill="#ffe7d8"/>
+
+  <g filter="url(#shadow)">
+    <rect x="76" y="72" width="1048" height="486" rx="44" fill="url(#card)" stroke="rgba(20,35,58,0.1)"/>
+  </g>
+
+  <rect x="120" y="160" width="192" height="192" rx="48" fill="#fff5f2"/>
+  <image href="clipledger_landing_assets/app-icon.png" x="120" y="160" width="192" height="192"/>
+
+  <text x="360" y="228" fill="#14233a" font-family="Helvetica, Arial, sans-serif" font-size="74" font-weight="700">Monely</text>
+  <text x="360" y="304" fill="#465770" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="500">AI receipt capture, monthly insight,</text>
+  <text x="360" y="350" fill="#465770" font-family="Helvetica, Arial, sans-serif" font-size="34" font-weight="500">asset tracking, and shared ledgers for iPhone.</text>
+
+  <rect x="360" y="398" width="264" height="54" rx="27" fill="url(#accent)"/>
+  <text x="492" y="432" text-anchor="middle" fill="white" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700">Local-first workflow</text>
+
+  <rect x="360" y="482" width="164" height="40" rx="20" fill="rgba(20,35,58,0.08)"/>
+  <text x="442" y="507" text-anchor="middle" fill="#465770" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Receipt OCR</text>
+
+  <rect x="542" y="482" width="184" height="40" rx="20" fill="rgba(20,35,58,0.08)"/>
+  <text x="634" y="507" text-anchor="middle" fill="#465770" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Shared ledgers</text>
+
+  <rect x="744" y="482" width="166" height="40" rx="20" fill="rgba(20,35,58,0.08)"/>
+  <text x="827" y="507" text-anchor="middle" fill="#465770" font-family="Helvetica, Arial, sans-serif" font-size="18" font-weight="700">Assets</text>
+</svg>
