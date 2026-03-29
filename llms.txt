@@ -7,3 +7,8 @@ Key public pages:
 - `https://monelyapp.com/privacy.html` - Hosted privacy policy for the app and static website
 - `https://monelyapp.com/support.html` - Public support and troubleshooting page
 - `https://monelyapp.com/terms.html` - Terms and product notices
+- `https://monelyapp.com/receipt-scanner-app-for-iphone.html` - Long-tail page for receipt capture and OCR workflows on iPhone
+- `https://monelyapp.com/shared-expense-tracker-for-couples.html` - Long-tail page for shared ledgers and couple-focused household finance
+- `https://monelyapp.com/bill-reminder-app-with-receipt-capture.html` - Long-tail page for subscriptions, recurring payments, and imported records
+- `https://monelyapp.com/expense-and-asset-tracker-for-iphone.html` - Long-tail page for spending and asset tracking in one iPhone app
+- `https://monelyapp.com/expense-reports-and-forecast-app.html` - Long-tail page for reports, compare-months views, and forecasting
