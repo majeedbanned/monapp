@@ -868,6 +868,25 @@ select {
     linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(255, 250, 244, 0.88));
 }
 
+.function-shot {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  min-height: 360px;
+  padding: 10px;
+  border: 1px solid rgba(20, 35, 58, 0.1);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.function-shot img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 44px rgba(20, 35, 58, 0.12);
+}
+
 .placeholder-surface {
   min-height: 360px;
   padding: 28px;
@@ -1344,6 +1363,10 @@ select {
   }
 
   .placeholder-surface {
+    min-height: 300px;
+  }
+
+  .function-shot {
     min-height: 300px;
   }
 }
