@@ -349,8 +349,9 @@ select {
 
 .hero-stage {
   position: relative;
-  min-height: 620px;
+  min-height: 680px;
   isolation: isolate;
+  perspective: 1400px;
 }
 
 .aura {
@@ -358,6 +359,7 @@ select {
   border-radius: 999px;
   filter: blur(20px);
   opacity: 0.78;
+  animation: hero-aura-pulse 14s ease-in-out infinite;
 }
 
 .aura-coral {
@@ -393,6 +395,14 @@ select {
   background: rgba(255, 255, 255, 0.78);
   backdrop-filter: blur(14px);
   box-shadow: var(--shadow-lg);
+  opacity: 0;
+  transform:
+    translate(var(--card-x, 0), var(--card-y, 0))
+    rotate(var(--card-rotate, 0deg));
+  animation:
+    hero-card-enter 0.9s var(--card-delay, 0ms) cubic-bezier(0.22, 1, 0.36, 1) forwards,
+    hero-card-float 9s calc(var(--card-delay, 0ms) + 1s) ease-in-out infinite;
+  will-change: transform;
 }
 
 .device-card img {
@@ -400,26 +410,52 @@ select {
   background: #10192b;
 }
 
+.device-card.top {
+  left: 16%;
+  top: 2%;
+  z-index: 1;
+  width: min(206px, 32vw);
+  --card-x: 0px;
+  --card-y: 0px;
+  --card-rotate: -6deg;
+  --card-float: -12px;
+  --card-delay: 0ms;
+}
+
 .device-card.main {
   left: 50%;
   top: 10%;
-  z-index: 3;
+  z-index: 4;
   width: min(286px, 44vw);
-  transform: translateX(-50%) rotate(-2deg);
+  --card-x: -50%;
+  --card-y: 0px;
+  --card-rotate: -2deg;
+  --card-float: -18px;
+  --card-delay: 220ms;
 }
 
 .device-card.left {
   left: 0;
   bottom: 8%;
   z-index: 2;
-  transform: rotate(-10deg);
+  width: min(236px, 38vw);
+  --card-x: 0px;
+  --card-y: 0px;
+  --card-rotate: -10deg;
+  --card-float: -14px;
+  --card-delay: 120ms;
 }
 
 .device-card.right {
   top: 18%;
   right: 0;
-  z-index: 1;
-  transform: rotate(8deg);
+  z-index: 3;
+  width: min(228px, 36vw);
+  --card-x: 0px;
+  --card-y: 0px;
+  --card-rotate: 8deg;
+  --card-float: 14px;
+  --card-delay: 360ms;
 }
 
 .floating-note {
@@ -431,6 +467,10 @@ select {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.88);
   box-shadow: var(--shadow-sm);
+  opacity: 0;
+  animation:
+    hero-note-enter 0.8s var(--note-delay, 0ms) cubic-bezier(0.22, 1, 0.36, 1) forwards,
+    hero-note-float 10s calc(var(--note-delay, 0ms) + 1.1s) ease-in-out infinite;
 }
 
 .floating-note small {
@@ -447,18 +487,85 @@ select {
 }
 
 .note-one {
-  top: 12%;
+  top: 10%;
   left: 2%;
+  --note-delay: 520ms;
 }
 
 .note-two {
   right: 4%;
-  bottom: 9%;
+  bottom: 11%;
+  --note-delay: 720ms;
 }
 
 .note-three {
-  left: 28%;
-  bottom: 2%;
+  left: 34%;
+  bottom: 3%;
+  --note-delay: 620ms;
+}
+
+@keyframes hero-card-enter {
+  from {
+    opacity: 0;
+    transform:
+      translate(var(--card-x, 0), calc(var(--card-y, 0px) + 34px))
+      rotate(calc(var(--card-rotate, 0deg) - 3deg))
+      scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform:
+      translate(var(--card-x, 0), var(--card-y, 0))
+      rotate(var(--card-rotate, 0deg))
+      scale(1);
+  }
+}
+
+@keyframes hero-card-float {
+  0%,
+  100% {
+    transform:
+      translate(var(--card-x, 0), var(--card-y, 0))
+      rotate(var(--card-rotate, 0deg));
+  }
+  50% {
+    transform:
+      translate(var(--card-x, 0), calc(var(--card-y, 0px) + var(--card-float, -12px)))
+      rotate(calc(var(--card-rotate, 0deg) + 1.2deg));
+  }
+}
+
+@keyframes hero-note-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes hero-note-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hero-aura-pulse {
+  0%,
+  100% {
+    opacity: 0.68;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.94;
+    transform: scale(1.08);
+  }
 }
 
 .section-head {
@@ -1166,7 +1273,7 @@ select {
   }
 
   .hero-stage {
-    min-height: 540px;
+    min-height: 600px;
   }
 }
 
@@ -1188,7 +1295,7 @@ select {
   }
 
   .hero-stage {
-    min-height: 410px;
+    min-height: 500px;
   }
 
   .device-card {
@@ -1196,8 +1303,20 @@ select {
     padding: 10px;
   }
 
+  .device-card.top {
+    width: min(152px, 32vw);
+  }
+
   .device-card.main {
     width: min(216px, 50vw);
+  }
+
+  .device-card.left {
+    width: min(178px, 42vw);
+  }
+
+  .device-card.right {
+    width: min(170px, 40vw);
   }
 
   .floating-note {
@@ -1205,7 +1324,7 @@ select {
   }
 
   .note-one {
-    top: -6px;
+    top: 8px;
     left: 0;
   }
 
