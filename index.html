@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monely for iPhone | AI Receipt Capture, Expense Insights, Assets, and Shared Ledgers</title>
-  <meta name="description" content="Monely is an iPhone finance app for AI-assisted receipt capture, monthly reports, asset tracking, and shared ledgers built around a local-first workflow.">
+  <title>Monely for iPhone | Receipts, Bills, Reports, Assets, and Shared Ledgers</title>
+  <meta name="description" content="Monely is an iPhone finance app for receipt capture, OCR-assisted expense logging, recurring bill tracking, cash-flow forecasts, asset tracking, and shared ledgers.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#fff8f2">
@@ -14,7 +14,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Monely">
   <meta property="og:title" content="Monely for iPhone">
-  <meta property="og:description" content="AI receipt capture, monthly insights, asset tracking, and shared ledgers in one calmer iPhone finance workflow.">
+  <meta property="og:description" content="Receipt capture, recurring bills, monthly reports, asset tracking, and shared ledgers in one calmer iPhone finance workflow.">
   <meta property="og:url" content="https://monelyapp.com/">
   <meta property="og:image" content="https://monelyapp.com/social-preview.png">
   <meta property="og:image:width" content="1200">
@@ -22,7 +22,7 @@
   <meta property="og:image:alt" content="Monely preview card showing the app name and finance workflow tagline.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Monely for iPhone">
-  <meta name="twitter:description" content="AI receipt capture, monthly insights, asset tracking, and shared ledgers in one calmer iPhone finance workflow.">
+  <meta name="twitter:description" content="Receipt capture, recurring bills, monthly reports, asset tracking, and shared ledgers in one calmer iPhone finance workflow.">
   <meta name="twitter:image" content="https://monelyapp.com/social-preview.png">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
   <link rel="canonical" href="https://monelyapp.com/">
@@ -43,7 +43,7 @@
           "@type": "WebSite",
           "name": "Monely",
           "url": "https://monelyapp.com/",
-          "description": "Monely is an iPhone finance app for AI-assisted receipt capture, monthly reports, asset tracking, and shared ledgers."
+          "description": "Monely is an iPhone finance app for receipt capture, recurring bill tracking, financial reports, asset tracking, and shared ledgers."
         },
         {
           "@type": "MobileApplication",
@@ -53,7 +53,7 @@
           "softwareVersion": "1.0",
           "image": "https://monelyapp.com/social-preview.png",
           "url": "https://monelyapp.com/",
-          "description": "Monely helps you scan receipts, import PDFs, review monthly reports, track assets, and collaborate in shared ledgers.",
+          "description": "Monely helps you scan receipts, track recurring bills, review reports and forecasts, manage assets, and collaborate in shared ledgers.",
           "inLanguage": [
             "en",
             "es",
@@ -61,12 +61,16 @@
             "ar"
           ],
           "featureList": [
-            "AI-assisted receipt capture",
-            "Photo and PDF import",
-            "Monthly spending insights",
+            "Receipt capture from camera, saved photos, screenshots, and PDFs",
+            "AI-assisted extraction of merchant, date, total, and category fields",
+            "Live expense ledger with month, day, and transaction drill-down",
+            "Financial reports, month comparison, and merchant trend views",
+            "Subscription tracking, bill reminders, and optimization views",
+            "Cash-flow forecasting for projected income, expense, and net",
+            "Cards and accounts performance tracking",
             "Asset tracking in a preferred currency",
             "Shared ledgers for families and teams",
-            "Local-first workflow with user-initiated AI analysis"
+            "Local-first workflow with user-initiated AI analysis, backup, and restore controls"
           ]
         }
       ]
@@ -104,8 +108,8 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="eyebrow">iPhone finance app</span>
-          <h1>Receipt capture, monthly insight, assets, and shared ledgers in one calmer workflow.</h1>
-          <p>Monely helps you scan receipts, import PDFs and screenshots, review focused monthly reports, track assets in your preferred currency, and collaborate across personal, family, or team ledgers without turning finance into a spreadsheet.</p>
+          <h1>Receipts, bills, reports, assets, and shared ledgers in one calmer iPhone workflow.</h1>
+          <p>Monely helps you scan receipts, import PDFs and screenshots, track recurring bills, review focused reports and forecasts, manage assets in your preferred currency, and collaborate across personal, family, or team ledgers without turning finance into a spreadsheet.</p>
 
           <div class="actions">
             <a class="button primary" href="#features">Explore the product</a>
@@ -115,10 +119,10 @@
           <ul class="pill-row" aria-label="Key Monely capabilities">
             <li>AI-assisted receipt logging</li>
             <li>Photo and PDF import</li>
-            <li>Monthly reports</li>
+            <li>Recurring bills</li>
+            <li>Reports and forecasts</li>
             <li>Asset tracking</li>
             <li>Shared ledgers</li>
-            <li>Local-first workflow</li>
           </ul>
         </div>
 
@@ -175,101 +179,366 @@
     <section class="section tight" id="features">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Product overview</span>
-          <h2>Built for fast capture, readable insight, and finance workflows that stay personal even when they become shared.</h2>
-          <p>The site is optimized around what the app already does today, so search snippets, support pages, and legal copy align with the real Monely product instead of generic landing-page filler.</p>
+          <span class="eyebrow">Capability map</span>
+          <h2>Each section below maps to a real Monely workflow, so the landing page explains the app the same way the product behaves on iPhone.</h2>
+          <p>The previous version grouped too many behaviors into a few broad blocks. This pass breaks the page into distinct product capabilities so visitors, reviewers, and search engines can scan the full finance workflow quickly.</p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
+        <div class="function-index-grid">
+          <a class="function-index-card" href="#capture">
             <span class="tag">Capture</span>
-            <h3>Receipt OCR with a confirmation step.</h3>
-            <p>Monely scans paper receipts, imported images, or PDFs, then keeps merchant, date, and total visible before an entry lands in your ledger.</p>
-          </article>
-          <article class="feature-card">
-            <span class="tag">Insight</span>
-            <h3>Monthly reports that stay broken into useful views.</h3>
-            <p>Instead of one oversized dashboard, Monely surfaces focused reports for spending, category changes, forecasts, merchant movement, and collaborative activity.</p>
-          </article>
-          <article class="feature-card">
+            <strong>Receipt intake</strong>
+            <p>Scan receipts, import photos, pull in screenshots, and open PDFs from one starting point.</p>
+          </a>
+          <a class="function-index-card" href="#ai-extraction">
+            <span class="tag">AI</span>
+            <strong>Structured extraction</strong>
+            <p>Turn receipt text into merchant, date, total, currency, and category-ready data.</p>
+          </a>
+          <a class="function-index-card" href="#ledger">
+            <span class="tag">Ledger</span>
+            <strong>Spending workspace</strong>
+            <p>Review month, day, and transaction history in a live ledger instead of a flat list.</p>
+          </a>
+          <a class="function-index-card" href="#reports">
+            <span class="tag">Reports</span>
+            <strong>Comparisons and trends</strong>
+            <p>Use financial reports, compare months, and inspect merchant movement without leaving the app.</p>
+          </a>
+          <a class="function-index-card" href="#subscriptions">
+            <span class="tag">Bills</span>
+            <strong>Recurring payments</strong>
+            <p>Surface due-soon subscriptions, overdue bills, and optimization opportunities.</p>
+          </a>
+          <a class="function-index-card" href="#forecast">
+            <span class="tag">Forecast</span>
+            <strong>Cash-flow planning</strong>
+            <p>Project income, expense, and net forward so the next months are readable.</p>
+          </a>
+          <a class="function-index-card" href="#cards-accounts">
+            <span class="tag">Sources</span>
+            <strong>Cards and accounts</strong>
+            <p>Measure inflow, outflow, and net movement by the payment sources you actually use.</p>
+          </a>
+          <a class="function-index-card" href="#assets">
             <span class="tag">Assets</span>
-            <h3>Portfolio tracking in a preferred currency.</h3>
-            <p>Asset value, allocation, and quote freshness remain connected to the same finance workflow as your daily entries and monthly reviews.</p>
-          </article>
-          <article class="feature-card">
-            <span class="tag">Collaboration</span>
-            <h3>Shared ledgers for families and small teams.</h3>
-            <p>Invite members, review shared activity, and keep settlement context visible without flattening the whole experience into spreadsheet-like complexity.</p>
-          </article>
+            <strong>Portfolio tracking</strong>
+            <p>Keep cash, metals, stocks, commodities, and crypto next to daily spending.</p>
+          </a>
+          <a class="function-index-card" href="#collaboration">
+            <span class="tag">Shared</span>
+            <strong>Collaborative ledgers</strong>
+            <p>Invite members, switch ledgers, and review shared finance activity with context.</p>
+          </a>
+          <a class="function-index-card" href="#controls">
+            <span class="tag">Control</span>
+            <strong>Locale, backup, and privacy</strong>
+            <p>Set currency and language, lock the app, and keep recovery paths visible.</p>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section" id="capture">
-      <div class="container story-grid">
-        <article class="story-card">
-          <span class="eyebrow">Receipt capture</span>
-          <h3>From receipt to structured entry in seconds.</h3>
-          <p>Capture begins with the source that is easiest in the moment: the camera, your photo library, a screenshot, or a PDF. Monely extracts the text, classifies the entry, and lets you confirm the important fields before saving.</p>
+    <div class="feature-sequence">
+      <section class="section" id="capture">
+        <div class="container function-shell">
+          <article class="function-copy">
+            <span class="eyebrow">Receipt capture</span>
+            <h3>Bring receipts into Monely from the source you already have.</h3>
+            <p>Receipt intake starts with the fastest option available in the moment: the camera, a saved photo, a screenshot, a PDF bill, or a manual entry when you want to type it in directly. That keeps capture friction low instead of forcing one rigid path.</p>
+            <ul class="function-points">
+              <li>Scan paper receipts directly on iPhone.</li>
+              <li>Import photos, screenshots, and PDFs into the same entry flow.</li>
+              <li>Switch to manual add when speed matters more than OCR.</li>
+            </ul>
+          </article>
 
-          <ul class="checklist">
-            <li>Scan paper receipts directly on iPhone with camera access.</li>
-            <li>Import PDFs or saved images without rebuilding the flow around another tool.</li>
-            <li>Keep manual entry polished for the moments when speed matters more than OCR.</li>
-            <li>Choose when AI analysis runs instead of treating it like an always-on black box.</li>
-          </ul>
-        </article>
-
-        <div class="device-stage">
-          <div class="device-card">
-            <img src="clipledger_landing_assets/mockups/screen-add.svg" width="620" height="1320" alt="Monely add transaction screen" loading="lazy" decoding="async">
-          </div>
-          <div class="mini-panel top-left">
-            <small>Input</small>
-            <strong>Import PDF</strong>
-          </div>
-          <div class="mini-panel top-right">
-            <small>OCR</small>
-            <strong>Merchant + total visible</strong>
-          </div>
-          <div class="mini-panel bottom-left">
-            <small>Control</small>
-            <strong>Manual review before save</strong>
-          </div>
-          <div class="mini-panel bottom-right">
-            <small>Output</small>
-            <strong>Structured ledger entry</strong>
+          <div class="function-visual tone-coral">
+            <div class="placeholder-surface" role="img" aria-label="Placeholder for Monely receipt intake screenshot">
+              <span class="placeholder-kicker">Image placeholder</span>
+              <strong>Receipt Intake Screen</strong>
+              <p>Replace with the add menu or capture screen showing Scan Receipt, Import Photo, Import PDF, and Manual Add.</p>
+            </div>
+            <div class="placeholder-chip-row">
+              <span class="placeholder-chip">Scan Receipt</span>
+              <span class="placeholder-chip">Import Photo</span>
+              <span class="placeholder-chip">Import PDF</span>
+              <span class="placeholder-chip">Manual Add</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="section" id="ai-extraction">
+        <div class="container function-shell reverse">
+          <article class="function-copy">
+            <span class="eyebrow">AI extraction</span>
+            <h3>Turn raw receipt text into organized finance fields before it lands in the ledger.</h3>
+            <p>Monely uses OCR and parsing to read merchant names, dates, totals, and currencies, then presents the result in a form the user can review. The goal is speed with verification, not invisible automation that hides the important details.</p>
+            <ul class="function-points">
+              <li>Extract merchant, date, total, currency, and category-ready values.</li>
+              <li>Keep the important fields visible before save.</li>
+              <li>Use AI analysis intentionally instead of as an always-on black box.</li>
+            </ul>
+          </article>
+
+          <div class="function-visual tone-blue">
+            <div class="placeholder-surface" role="img" aria-label="Placeholder for Monely OCR extraction screenshot">
+              <span class="placeholder-kicker">Image placeholder</span>
+              <strong>OCR Review Screen</strong>
+              <p>Replace with the receipt parsing or confirmation step that shows extracted text becoming structured transaction data.</p>
+            </div>
+            <div class="placeholder-chip-row">
+              <span class="placeholder-chip">Merchant</span>
+              <span class="placeholder-chip">Date</span>
+              <span class="placeholder-chip">Total</span>
+              <span class="placeholder-chip">Category</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="ledger">
+        <div class="container function-shell">
+          <article class="function-copy">
+            <span class="eyebrow">Live ledger</span>
+            <h3>Track spending in a workspace that stays readable at the month, day, and transaction level.</h3>
+            <p>The main ledger is built for day-to-day finance review, not just data entry. Monely lets users move from month summaries into day-level activity and then into the underlying transactions without losing context.</p>
+            <ul class="function-points">
+              <li>See expense, income, and net summaries in one place.</li>
+              <li>Browse by calendar, month view, and transaction list.</li>
+              <li>Drill from totals into the entries behind them.</li>
+            </ul>
+          </article>
+
+          <div class="function-visual tone-mint">
+            <div class="placeholder-surface" role="img" aria-label="Placeholder for Monely live ledger screenshot">
+              <span class="placeholder-kicker">Image placeholder</span>
+              <strong>Expenses Workspace</strong>
+              <p>Replace with the main expenses tab showing month summary, calendar navigation, and the transaction feed.</p>
+            </div>
+            <div class="placeholder-chip-row">
+              <span class="placeholder-chip">Month Summary</span>
+              <span class="placeholder-chip">Calendar</span>
+              <span class="placeholder-chip">Daily View</span>
+              <span class="placeholder-chip">Transactions</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reports">
+        <div class="container function-shell reverse">
+          <article class="function-copy">
+            <span class="eyebrow">Reports and trends</span>
+            <h3>Open the exact report that answers the question instead of one overloaded dashboard.</h3>
+            <p>Monely separates financial reports into focused views such as month comparison, merchant price trends, and category movement. That makes it easier to understand what changed and then jump back to the entries responsible for the shift.</p>
+            <ul class="function-points">
+              <li>Compare categories month over month.</li>
+              <li>Inspect merchant movement and price trends.</li>
+              <li>Keep drill-down paths back to the supporting records.</li>
+            </ul>
+          </article>
+
+          <div class="function-visual tone-gold">
+            <div class="placeholder-surface" role="img" aria-label="Placeholder for Monely financial reports screenshot">
+              <span class="placeholder-kicker">Image placeholder</span>
+              <strong>Financial Reports Hub</strong>
+              <p>Replace with the insights surface or report selector that shows Financial Reports, Compare Months, and Merchant Price Trend.</p>
+            </div>
+            <div class="placeholder-chip-row">
+              <span class="placeholder-chip">Financial Reports</span>
+              <span class="placeholder-chip">Compare Months</span>
+              <span class="placeholder-chip">Merchant Trends</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="subscriptions">
+        <div class="container function-shell">
+          <article class="function-copy">
+            <span class="eyebrow">Subscriptions and bills</span>
+            <h3>See recurring payments before they surprise the month.</h3>
+            <p>Recurring expenses are treated as a first-class workflow. Users can review due-soon bills, overdue payments, projected monthly subscription cost, and optimization views without piecing the picture together manually.</p>
+            <ul class="function-points">
+              <li>Surface due-soon and overdue recurring payments.</li>
+              <li>Track projected monthly subscription cost.</li>
+              <li>Spot opportunities to consolidate or cancel recurring spend.</li>
+            </ul>
+          </article>
+
+          <div class="function-visual tone-coral">
+            <div class="placeholder-surface" role="img" aria-label="Placeholder for Monely subscriptions screenshot">
+              <span class="placeholder-kicker">Image placeholder</span>
+              <strong>Subscriptions Overview</strong>
+              <p>Replace with the upcoming bills or subscriptions optimization screen that shows due dates, monthly cost, and actionability.</p>
+            </div>
+            <div class="placeholder-chip-row">
+              <span class="placeholder-chip">Upcoming Bills</span>
+              <span class="placeholder-chip">Overdue</span>
+              <span class="placeholder-chip">Monthly Cost</span>
+              <span class="placeholder-chip">Optimization</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="forecast">
+        <div class="container function-shell reverse">
+          <article class="function-copy">
+            <span class="eyebrow">Forecasting</span>
+            <h3>Project future months so expense, income, and net are visible before they happen.</h3>
+            <p>The forecast view extends Monely beyond history. Instead of only reporting what already happened, it shows projected financial movement so users can plan around recurring obligations and expected cash flow.</p>
+            <ul class="function-points">
+              <li>View projected expense, income, and net together.</li>
+              <li>Read multiple future months in one sequence.</li>
+              <li>Use recurring payment data to make the next months less ambiguous.</li>
+            </ul>
+          </article>
+
+          <div class="function-visual tone-blue">
+            <div class="placeholder-surface" role="img" aria-label="Placeholder for Monely forecast screenshot">
+              <span class="placeholder-kicker">Image placeholder</span>
+              <strong>Cash-Flow Forecast</strong>
+              <p>Replace with the forecast report showing projected monthly expense, income, and net over upcoming months.</p>
+            </div>
+            <div class="placeholder-chip-row">
+              <span class="placeholder-chip">Projected Expense</span>
+              <span class="placeholder-chip">Projected Income</span>
+              <span class="placeholder-chip">Projected Net</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cards-accounts">
+        <div class="container function-shell">
+          <article class="function-copy">
+            <span class="eyebrow">Cards and accounts</span>
+            <h3>Understand which payment sources are driving inflow, outflow, and net movement.</h3>
+            <p>Cards and accounts are not just setup data. Monely uses them as reporting dimensions so users can see how each source is performing across the ledger and whether the underlying mix of accounts is changing.</p>
+            <ul class="function-points">
+              <li>Measure outflow and inflow by payment source.</li>
+              <li>See net movement per card or account.</li>
+              <li>Keep source performance tied to real transaction history.</li>
+            </ul>
+          </article>
+
+          <div class="function-visual tone-mint">
+            <div class="placeholder-surface" role="img" aria-label="Placeholder for Monely cards and accounts screenshot">
+              <span class="placeholder-kicker">Image placeholder</span>
+              <strong>Payment Source Performance</strong>
+              <p>Replace with the cards and accounts analytics screen that breaks down inflow, outflow, and net by source.</p>
+            </div>
+            <div class="placeholder-chip-row">
+              <span class="placeholder-chip">Cards</span>
+              <span class="placeholder-chip">Accounts</span>
+              <span class="placeholder-chip">Inflow</span>
+              <span class="placeholder-chip">Outflow</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="assets">
+        <div class="container function-shell reverse">
+          <article class="function-copy">
+            <span class="eyebrow">Assets</span>
+            <h3>Track portfolio value beside spending instead of in a disconnected tool.</h3>
+            <p>Monely includes an asset workspace for cash, metals, stocks, commodities, and crypto with preferred-currency valuation. That keeps longer-term position and day-to-day spending inside one finance system with the same visual language.</p>
+            <ul class="function-points">
+              <li>Review total value in the user&rsquo;s preferred currency.</li>
+              <li>Check allocation, holdings, and quote freshness.</li>
+              <li>Keep assets and expenses in one iPhone workflow.</li>
+            </ul>
+          </article>
+
+          <div class="function-visual tone-gold">
+            <div class="placeholder-surface" role="img" aria-label="Placeholder for Monely assets screenshot">
+              <span class="placeholder-kicker">Image placeholder</span>
+              <strong>Portfolio Dashboard</strong>
+              <p>Replace with the assets tab showing total valuation, allocation, and the list of holdings across asset classes.</p>
+            </div>
+            <div class="placeholder-chip-row">
+              <span class="placeholder-chip">Cash</span>
+              <span class="placeholder-chip">Stocks</span>
+              <span class="placeholder-chip">Crypto</span>
+              <span class="placeholder-chip">Allocation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="collaboration">
+        <div class="container function-shell">
+          <article class="function-copy">
+            <span class="eyebrow">Collaboration</span>
+            <h3>Run personal, family, or team finance inside shared ledgers with visible membership and roles.</h3>
+            <p>Monely supports multiple ledgers, active-ledger switching, invite codes, QR-based join flows, and member-aware reporting. The shared workflow is designed to keep context visible rather than flattening collaboration into a spreadsheet export.</p>
+            <ul class="function-points">
+              <li>Invite members with codes or QR-based join flows.</li>
+              <li>Switch between personal and shared ledgers cleanly.</li>
+              <li>Review collaborative spending with member-aware analytics.</li>
+            </ul>
+          </article>
+
+          <div class="function-visual tone-coral">
+            <div class="placeholder-surface" role="img" aria-label="Placeholder for Monely shared ledger screenshot">
+              <span class="placeholder-kicker">Image placeholder</span>
+              <strong>Shared Ledger Controls</strong>
+              <p>Replace with the collaboration screen showing member roles, invite options, and shared-ledger activity.</p>
+            </div>
+            <div class="placeholder-chip-row">
+              <span class="placeholder-chip">Invite Code</span>
+              <span class="placeholder-chip">QR Join</span>
+              <span class="placeholder-chip">Roles</span>
+              <span class="placeholder-chip">Shared Reports</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="controls">
+        <div class="container function-shell reverse">
+          <article class="function-copy">
+            <span class="eyebrow">Control and trust</span>
+            <h3>Adjust locale, protect access, and keep recovery options visible.</h3>
+            <p>Trust features are part of the product surface, not hidden boilerplate. Monely gives users direct control over currency, language, security, backups, and restore paths so the finance workflow stays usable across households, regions, and devices.</p>
+            <ul class="function-points">
+              <li>Set currency, exchange-rate context, and language preferences.</li>
+              <li>Use Face ID or app lock to protect the finance workspace.</li>
+              <li>Create backups and restore data when needed.</li>
+            </ul>
+            <div class="actions">
+              <a class="button secondary" href="privacy.html">Privacy policy</a>
+              <a class="button ghost" href="support.html">Support page</a>
+            </div>
+          </article>
+
+          <div class="function-visual tone-blue">
+            <div class="placeholder-surface" role="img" aria-label="Placeholder for Monely settings and backup screenshot">
+              <span class="placeholder-kicker">Image placeholder</span>
+              <strong>Settings and Backup</strong>
+              <p>Replace with the settings area that shows currency, language, security, and backup or restore controls.</p>
+            </div>
+            <div class="placeholder-chip-row">
+              <span class="placeholder-chip">Currency</span>
+              <span class="placeholder-chip">Language</span>
+              <span class="placeholder-chip">Face ID</span>
+              <span class="placeholder-chip">Backup</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <section class="section" id="insight">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">Reports and assets</span>
-          <h2>Use the report you need right now, then keep assets and collaboration inside the same system.</h2>
-          <p>Monely supports focused monthly views instead of forcing every decision through one dashboard. That keeps finance readable when the app grows from personal logging into forecasting, asset review, and shared household or team workflows.</p>
-        </div>
-
-        <div class="dual-grid">
-          <article class="story-card">
-            <span class="eyebrow">Monthly insight</span>
-            <h3>Drill from trends into the receipt behind them.</h3>
-            <p>Financial Reports, Compare Months, Financial Forecast, and data quality views help surface what changed, why it changed, and where the supporting records came from.</p>
-            <div class="actions">
-              <a class="button ghost" href="#faq">See common questions</a>
-            </div>
-          </article>
-
-          <article class="story-card">
-            <span class="eyebrow">Assets and shared ledgers</span>
-            <h3>Track longer-term position without leaving the app you use every day.</h3>
-            <p>Asset values, preferred-currency pricing, and collaborative ledgers sit next to your monthly records so personal finance and shared finance speak the same visual language.</p>
-            <div class="actions">
-              <a class="button ghost" href="support.html">Open support documentation</a>
-            </div>
-          </article>
+          <span class="eyebrow">One connected workflow</span>
+          <h2>Monely stays useful as finance work grows from quick capture into planning, investing, and shared ledgers.</h2>
+          <p>The app is designed so daily entries, recurring bills, forecasts, assets, and collaboration stay connected instead of getting split across separate tools and disconnected reports.</p>
         </div>
       </div>
     </section>
@@ -352,9 +621,9 @@
     <section class="section">
       <div class="container cta-shell">
         <div>
-          <span class="eyebrow">Publish-ready surface</span>
-          <h2>The public site now covers product intent, privacy, support, and static-host basics.</h2>
-          <p>The landing page, privacy policy, support page, terms page, manifest, robots file, 404 page, favicon set, and social preview asset are all bundled into the `website` folder for a static deployment.</p>
+          <span class="eyebrow">Launch surface</span>
+          <h2>Monely now presents the product, the trust model, and the public support paths on one clean domain.</h2>
+          <p>Use the homepage to explain the app, then route users to privacy, support, and terms pages that stay consistent with the workflows described above.</p>
           <div class="link-cluster">
             <a class="button primary" href="support.html">Support page</a>
             <a class="button secondary" href="privacy.html">Privacy policy</a>
@@ -367,20 +636,20 @@
             <img src="clipledger_landing_assets/mockups/screen-settings.svg" width="620" height="1320" alt="Monely settings screen" loading="lazy" decoding="async">
           </div>
           <div class="mini-panel top-left">
-            <small>SEO</small>
-            <strong>Open Graph + metadata added</strong>
+            <small>Product</small>
+            <strong>Workflows mapped clearly</strong>
           </div>
           <div class="mini-panel top-right">
-            <small>Legal</small>
+            <small>Trust</small>
             <strong>Privacy, support, and terms</strong>
           </div>
           <div class="mini-panel bottom-left">
-            <small>Host</small>
-            <strong>Static-site ready</strong>
+            <small>Control</small>
+            <strong>Local-first with visible safeguards</strong>
           </div>
           <div class="mini-panel bottom-right">
-            <small>Social</small>
-            <strong>Dedicated preview image</strong>
+            <small>Access</small>
+            <strong>One clean public home for Monely</strong>
           </div>
         </div>
       </div>
@@ -391,7 +660,7 @@
     <div class="container footer-shell">
       <div class="footer-copy">
         <strong>Monely for iPhone.</strong>
-        <p>A calmer way to capture receipts, understand the month, review assets, and work across shared ledgers. Website copy last updated March 29, 2026.</p>
+        <p>A calmer way to capture receipts, manage bills, understand the month, review assets, and work across shared ledgers. Website copy last updated March 29, 2026.</p>
       </div>
 
       <nav class="footer-links" aria-label="Footer">
