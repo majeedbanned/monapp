@@ -3,7 +3,7 @@
 > Monely is an iPhone finance app for AI-assisted receipt capture, monthly reports, asset tracking, and shared ledgers.
 
 Key public pages:
-- `/` - Monely marketing landing page
-- `/privacy.html` - Hosted privacy policy for the app and static website
-- `/support.html` - Public support and troubleshooting page
-- `/terms.html` - Terms and product notices
+- `https://monelyapp.com/` - Monely marketing landing page
+- `https://monelyapp.com/privacy.html` - Hosted privacy policy for the app and static website
+- `https://monelyapp.com/support.html` - Public support and troubleshooting page
+- `https://monelyapp.com/terms.html` - Terms and product notices

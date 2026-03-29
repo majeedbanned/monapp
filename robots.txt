@@ -2,5 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /Sift%20-%20Feel%20news%20differently.mhtml
 Disallow: /sift_mhtml_images/
-
-# Add a sitemap after the final production domain is fixed.
+Sitemap: https://monelyapp.com/sitemap.xml
