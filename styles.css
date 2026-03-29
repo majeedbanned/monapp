@@ -487,6 +487,13 @@ select {
   gap: 18px;
 }
 
+.feature-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
 .function-index-card {
   display: block;
   padding: 22px;
@@ -510,6 +517,46 @@ select {
 }
 
 .function-index-card p {
+  margin: 0;
+  color: var(--muted-strong);
+}
+
+.feature-showcase-card {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-showcase-media {
+  overflow: hidden;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at 20% 18%, rgba(255, 106, 96, 0.12), transparent 28%),
+    radial-gradient(circle at 82% 18%, rgba(79, 137, 255, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(244, 248, 253, 0.9));
+}
+
+.feature-showcase-media img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.feature-showcase-card figcaption {
+  margin-top: 18px;
+}
+
+.feature-showcase-card strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.12rem;
+  letter-spacing: -0.03em;
+}
+
+.feature-showcase-card p {
   margin: 0;
   color: var(--muted-strong);
 }
@@ -1108,6 +1155,7 @@ select {
   }
 
   .feature-grid,
+  .feature-showcase-grid,
   .function-index-grid,
   .dual-grid,
   .trust-grid,
@@ -1183,6 +1231,7 @@ select {
 
 @media (max-width: 620px) {
   .feature-grid,
+  .feature-showcase-grid,
   .function-index-grid,
   .dual-grid,
   .trust-grid,
