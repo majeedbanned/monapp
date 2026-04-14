@@ -19,9 +19,9 @@
   --radius-lg: 28px;
   --radius-md: 20px;
   --max: 1200px;
-  --sans: "Sora", system-ui, sans-serif;
-  --display: "Fraunces", Georgia, serif;
-  --mono: "IBM Plex Mono", monospace;
+  --sans: "Poppins", system-ui, sans-serif;
+  --display: "Poppins", system-ui, sans-serif;
+  --mono: "Poppins", system-ui, sans-serif;
 }
 
 * {
@@ -70,6 +70,18 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 button,
@@ -205,10 +217,7 @@ select {
 }
 
 .header-cta {
-  min-height: 46px;
-  padding: 0 18px;
-  font-size: 0.86rem;
-  white-space: nowrap;
+  width: 170px;
   flex: 0 0 auto;
 }
 
@@ -261,6 +270,36 @@ select {
 
 .button.is-disabled:hover {
   transform: none;
+}
+
+.app-store-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 216px;
+  border-radius: 18px;
+  transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+}
+
+.app-store-link img {
+  width: 100%;
+  height: auto;
+}
+
+.app-store-link:hover {
+  transform: translateY(-1px);
+}
+
+.app-store-link.is-disabled {
+  opacity: 0.72;
+  filter: grayscale(0.12);
+}
+
+.hero-store-cta,
+.final-store-cta,
+.footer-app-button {
+  width: 216px;
 }
 
 .actions {
@@ -337,6 +376,7 @@ select {
   max-width: 12ch;
   margin: 18px 0;
   font-size: clamp(2.8rem, 6vw, 5.2rem);
+  font-weight: 700;
 }
 
 .hero-copy p,
@@ -699,6 +739,7 @@ select {
 .section-head h2 {
   margin: 16px 0 12px;
   font-size: clamp(2rem, 4vw, 3.3rem);
+  font-weight: 700;
 }
 
 .feature-grid,
@@ -862,6 +903,91 @@ select {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(248, 252, 255, 0.84)),
     linear-gradient(135deg, rgba(79, 137, 255, 0.06), rgba(255, 106, 96, 0.06));
+}
+
+.benefit-card-media {
+  position: relative;
+  min-height: 200px;
+  margin-bottom: 18px;
+  padding: 20px;
+  overflow: hidden;
+  border: 1px dashed rgba(20, 35, 58, 0.16);
+  border-radius: 22px;
+  display: grid;
+  place-items: center;
+}
+
+.benefit-card-media.tone-coral {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 106, 96, 0.2), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 248, 245, 0.9));
+}
+
+.benefit-card-media.tone-blue {
+  background:
+    radial-gradient(circle at 82% 18%, rgba(79, 137, 255, 0.18), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(245, 249, 255, 0.9));
+}
+
+.benefit-card-media.tone-mint {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(72, 183, 154, 0.18), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(245, 255, 250, 0.9));
+}
+
+.benefit-card-device {
+  width: min(132px, 100%);
+  height: 176px;
+  padding: 16px 14px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 18px 36px rgba(20, 35, 58, 0.1);
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.benefit-card-device-notch {
+  width: 42px;
+  height: 8px;
+  margin: 0 auto 8px;
+  border-radius: 999px;
+  background: rgba(20, 35, 58, 0.18);
+}
+
+.benefit-card-device-line {
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(20, 35, 58, 0.1);
+}
+
+.benefit-card-device-line.line-wide {
+  width: 100%;
+}
+
+.benefit-card-device-line.line-mid {
+  width: 74%;
+}
+
+.benefit-card-device-line.line-short {
+  width: 56%;
+}
+
+.benefit-card-placeholder-label {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(20, 35, 58, 0.84);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 .benefit-card p,
@@ -1593,7 +1719,7 @@ select {
   }
 
   .header-cta {
-    width: 100%;
+    width: 170px;
   }
 
   .feature-grid,
@@ -1652,6 +1778,12 @@ select {
 
   .hero-device {
     width: min(290px, 100%);
+  }
+
+  .hero-store-cta,
+  .final-store-cta,
+  .footer-app-button {
+    width: 204px;
   }
 
   .hero-stage {
@@ -1734,6 +1866,10 @@ select {
     flex: 1 1 220px;
   }
 
+  .actions > .app-store-link {
+    flex: 0 0 auto;
+  }
+
   .footer-shell {
     flex-direction: column;
   }
@@ -1744,6 +1880,14 @@ select {
 
   .footer-links {
     justify-content: flex-start;
+  }
+
+  .app-store-link,
+  .header-cta,
+  .hero-store-cta,
+  .final-store-cta,
+  .footer-app-button {
+    width: min(216px, 100%);
   }
 
   .story-card,

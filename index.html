@@ -33,7 +33,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Sora:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
     {
@@ -101,7 +101,10 @@
           <a href="support.html">Support</a>
           <a href="privacy.html">Privacy</a>
         </nav>
-        <a class="button primary header-cta" data-app-store-link href="#">Download on the App Store</a>
+        <a class="app-store-link header-cta" data-app-store-link href="#" aria-label="Download on the App Store">
+          <span class="sr-only">Download on the App Store</span>
+          <img src="clipledger_landing_assets/app-store-badge.svg" width="560" height="180" alt="">
+        </a>
       </div>
     </div>
   </header>
@@ -115,7 +118,10 @@
           <p>Scan receipts, log bills, and see where your money goes with Monely for iPhone.</p>
 
           <div class="actions">
-            <a class="button primary" data-app-store-link href="#">Download on the App Store</a>
+            <a class="app-store-link hero-store-cta" data-app-store-link href="#" aria-label="Download on the App Store">
+              <span class="sr-only">Download on the App Store</span>
+              <img src="clipledger_landing_assets/app-store-badge.svg" width="560" height="180" alt="">
+            </a>
             <a class="button secondary" href="#demo">Watch 30-second demo</a>
           </div>
           <p class="hero-support">Built for fast personal tracking, clearer monthly reviews, and shared household spending when you need it.</p>
@@ -167,16 +173,43 @@
 
         <div class="feature-grid benefit-grid">
           <article class="feature-card benefit-card">
+            <div class="benefit-card-media tone-coral" aria-hidden="true">
+              <div class="benefit-card-device">
+                <div class="benefit-card-device-notch"></div>
+                <div class="benefit-card-device-line line-wide"></div>
+                <div class="benefit-card-device-line line-mid"></div>
+                <div class="benefit-card-device-line line-short"></div>
+              </div>
+              <span class="benefit-card-placeholder-label">App image placeholder</span>
+            </div>
             <span class="tag">Capture</span>
             <h3>Smart receipt capture</h3>
             <p>Scan paper receipts or import a saved photo, screenshot, or PDF when that is faster than typing from scratch.</p>
           </article>
           <article class="feature-card benefit-card">
+            <div class="benefit-card-media tone-blue" aria-hidden="true">
+              <div class="benefit-card-device">
+                <div class="benefit-card-device-notch"></div>
+                <div class="benefit-card-device-line line-wide"></div>
+                <div class="benefit-card-device-line line-mid"></div>
+                <div class="benefit-card-device-line line-short"></div>
+              </div>
+              <span class="benefit-card-placeholder-label">App image placeholder</span>
+            </div>
             <span class="tag">Visibility</span>
             <h3>Clear monthly visibility</h3>
             <p>See where your money goes with a cleaner month-to-date view, focused totals, and reports that stay easy to read.</p>
           </article>
           <article class="feature-card benefit-card">
+            <div class="benefit-card-media tone-mint" aria-hidden="true">
+              <div class="benefit-card-device">
+                <div class="benefit-card-device-notch"></div>
+                <div class="benefit-card-device-line line-wide"></div>
+                <div class="benefit-card-device-line line-mid"></div>
+                <div class="benefit-card-device-line line-short"></div>
+              </div>
+              <span class="benefit-card-placeholder-label">App image placeholder</span>
+            </div>
             <span class="tag">Shared</span>
             <h3>Shared finance made simple</h3>
             <p>Keep personal spending separate or move into shared ledgers for couples and families without changing tools.</p>
@@ -274,7 +307,10 @@
         <h2>Download Monely and keep expense tracking quick from the first receipt onward.</h2>
         <p>Monely for iPhone brings smart receipt capture, clearer monthly visibility, and shared finance into one cleaner workflow.</p>
         <div class="link-cluster actions center">
-          <a class="button primary" data-app-store-link href="#">Download on the App Store</a>
+          <a class="app-store-link final-store-cta" data-app-store-link href="#" aria-label="Download on the App Store">
+            <span class="sr-only">Download on the App Store</span>
+            <img src="clipledger_landing_assets/app-store-badge.svg" width="560" height="180" alt="">
+          </a>
           <a class="button secondary" href="support.html">Support</a>
           <a class="button ghost" href="privacy.html">Privacy</a>
           <a class="button ghost" href="terms.html">Terms</a>
@@ -291,7 +327,10 @@
       </div>
 
       <div class="footer-actions">
-        <a class="button primary footer-app-button" data-app-store-link href="#">Download on the App Store</a>
+        <a class="app-store-link footer-app-button" data-app-store-link href="#" aria-label="Download on the App Store">
+          <span class="sr-only">Download on the App Store</span>
+          <img src="clipledger_landing_assets/app-store-badge.svg" width="560" height="180" alt="">
+        </a>
         <nav class="footer-links" aria-label="Footer">
           <a href="/">Home</a>
           <a href="#benefits">Benefits</a>
@@ -331,3 +370,15 @@
   </script>
 </body>
 </html>
+
+<!-- G-Q8DZ22RE57
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const appStoreLink = document.querySelector("[data-app-store-link]");
+    if (appStoreLink) {
+      appStoreLink.addEventListener("click", function (event) {
+        event.preventDefault();
+      });
+    }
+  });
+</script> -->
