@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /test.html
 Disallow: /Sift%20-%20Feel%20news%20differently.mhtml
 Disallow: /sift_mhtml_images/
 Sitemap: https://monelyapp.com/sitemap.xml

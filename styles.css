@@ -1104,6 +1104,16 @@ select {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  border: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.demo-play:hover {
+  transform: translateY(-1px);
+  background: rgba(20, 35, 58, 0.96);
 }
 
 .demo-copy strong {
@@ -1189,6 +1199,65 @@ select {
   max-width: 58ch;
   margin: 0;
   color: var(--muted-strong);
+}
+
+.email-capture-shell {
+  padding: 34px;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(20, 35, 58, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(248, 252, 255, 0.84)),
+    linear-gradient(135deg, rgba(72, 183, 154, 0.08), rgba(79, 137, 255, 0.08));
+  box-shadow: var(--shadow-md);
+}
+
+.email-capture-shell .section-head {
+  margin-bottom: 24px;
+}
+
+.email-capture-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.email-capture-form input {
+  flex: 1 1 280px;
+  min-height: 50px;
+  padding: 0 16px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.email-capture-form input::placeholder {
+  color: var(--muted);
+}
+
+.email-capture-form button {
+  min-width: 144px;
+}
+
+.email-capture-status {
+  min-height: 28px;
+  margin: 12px 0 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.email-capture-status[data-state="loading"] {
+  color: var(--muted);
+}
+
+.email-capture-status[data-state="success"] {
+  color: #1e7a63;
+}
+
+.email-capture-status[data-state="error"] {
+  color: #c55259;
 }
 
 .page-layout {
@@ -1896,6 +1965,7 @@ select {
   .highlight-panel,
   .prose,
   .cta-shell,
+  .email-capture-shell,
   .device-stage,
   .empty-state {
     padding: 24px;
@@ -1903,6 +1973,15 @@ select {
 
   .page-nav {
     padding: 18px;
+  }
+
+  .email-capture-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .email-capture-form button {
+    width: 100%;
   }
 }
 

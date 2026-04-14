@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Monely for iPhone | Receipts, Bills, Reports, Assets, and Shared Ledgers</title>
-  <meta name="description" content="Monely is an iPhone finance app for receipt capture, OCR-assisted expense logging, recurring bill tracking, cash-flow forecasts, asset tracking, and shared ledgers.">
+  <title>Monely - Expense Tracker for iPhone</title>
+  <meta name="description" content="Track expenses in seconds with Monely. Scan receipts, log bills, and see where your money goes with a clean, modern expense tracker for iPhone.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#fff8f2">
@@ -13,18 +13,18 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Monely">
-  <meta property="og:title" content="Monely for iPhone">
-  <meta property="og:description" content="Receipt capture, recurring bills, monthly reports, asset tracking, and shared ledgers in one calmer iPhone finance workflow.">
+  <meta property="og:title" content="Monely - Expense Tracker for iPhone">
+  <meta property="og:description" content="Track expenses in seconds with Monely. Scan receipts, log bills, and see where your money goes with a clean, modern expense tracker for iPhone.">
   <meta property="og:url" content="https://monelyapp.com/">
   <meta property="og:image" content="https://monelyapp.com/social-preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Monely preview card showing the app name and finance workflow tagline.">
+  <meta property="og:image:alt" content="Monely preview card for the iPhone expense tracker.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Monely for iPhone">
-  <meta name="twitter:description" content="Receipt capture, recurring bills, monthly reports, asset tracking, and shared ledgers in one calmer iPhone finance workflow.">
+  <meta name="twitter:title" content="Monely - Expense Tracker for iPhone">
+  <meta name="twitter:description" content="Track expenses in seconds with Monely. Scan receipts, log bills, and see where your money goes with a clean, modern expense tracker for iPhone.">
   <meta name="twitter:image" content="https://monelyapp.com/social-preview.png">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://*.list-manage.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://*.list-manage.com; base-uri 'self'; form-action 'self' https://*.list-manage.com; frame-ancestors 'none'">
   <link rel="canonical" href="https://monelyapp.com/">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon-32x32.png" type="image/png" sizes="32x32">
@@ -40,39 +40,19 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "WebSite",
+          "@type": "Organization",
           "name": "Monely",
           "url": "https://monelyapp.com/",
-          "description": "Monely is an iPhone finance app for receipt capture, recurring bill tracking, financial reports, asset tracking, and shared ledgers."
+          "logo": "https://monelyapp.com/clipledger_landing_assets/app-icon.png"
         },
         {
-          "@type": "MobileApplication",
+          "@type": "SoftwareApplication",
           "name": "Monely",
           "applicationCategory": "FinanceApplication",
           "operatingSystem": "iOS",
-          "softwareVersion": "1.0",
-          "image": "https://monelyapp.com/social-preview.png",
           "url": "https://monelyapp.com/",
-          "description": "Monely helps you scan receipts, track recurring bills, review reports and forecasts, manage assets, and collaborate in shared ledgers.",
-          "inLanguage": [
-            "en",
-            "es",
-            "hi",
-            "ar"
-          ],
-          "featureList": [
-            "Receipt capture from camera, saved photos, screenshots, and PDFs",
-            "AI-assisted extraction of merchant, date, total, and category fields",
-            "Siri and App Shortcuts support for adding transactions and checking spending summaries",
-            "Live expense ledger with month, day, and transaction drill-down",
-            "Financial reports, month comparison, and merchant trend views",
-            "Subscription tracking, bill reminders, and optimization views",
-            "Cash-flow forecasting for projected income, expense, and net",
-            "Cards and accounts performance tracking",
-            "Asset tracking in a preferred currency",
-            "Shared ledgers for families and teams",
-            "Local-first workflow with user-initiated AI analysis, backup, and restore controls"
-          ]
+          "image": "https://monelyapp.com/social-preview.png",
+          "description": "Monely helps you scan receipts, log bills, and see where your money goes with clearer monthly visibility and shared ledgers for couples or families."
         }
       ]
     }
@@ -101,7 +81,7 @@
           <a href="support.html">Support</a>
           <a href="privacy.html">Privacy</a>
         </nav>
-        <a class="app-store-link header-cta" data-app-store-link href="#" aria-label="Download on the App Store">
+        <a class="app-store-link header-cta" data-app-store-link data-cta-location="header" href="#" aria-label="Download on the App Store">
           <span class="sr-only">Download on the App Store</span>
           <img src="clipledger_landing_assets/app-store-badge.svg" width="560" height="180" alt="">
         </a>
@@ -118,11 +98,11 @@
           <p>Scan receipts, log bills, and see where your money goes with Monely for iPhone.</p>
 
           <div class="actions">
-            <a class="app-store-link hero-store-cta" data-app-store-link href="#" aria-label="Download on the App Store">
+            <a class="app-store-link hero-store-cta" data-app-store-link data-cta-location="hero" href="#" aria-label="Download on the App Store">
               <span class="sr-only">Download on the App Store</span>
               <img src="clipledger_landing_assets/app-store-badge.svg" width="560" height="180" alt="">
             </a>
-            <a class="button secondary" href="#demo">Watch 30-second demo</a>
+            <a class="button secondary" data-demo-trigger data-demo-location="hero" href="#demo">Watch 30-second demo</a>
           </div>
           <p class="hero-support">Built for fast personal tracking, clearer monthly reviews, and shared household spending when you need it.</p>
         </div>
@@ -180,7 +160,7 @@
                 <div class="benefit-card-device-line line-mid"></div>
                 <div class="benefit-card-device-line line-short"></div>
               </div>
-              <span class="benefit-card-placeholder-label">App image placeholder</span>
+              <span class="benefit-card-placeholder-label">App preview</span>
             </div>
             <span class="tag">Capture</span>
             <h3>Smart receipt capture</h3>
@@ -194,7 +174,7 @@
                 <div class="benefit-card-device-line line-mid"></div>
                 <div class="benefit-card-device-line line-short"></div>
               </div>
-              <span class="benefit-card-placeholder-label">App image placeholder</span>
+              <span class="benefit-card-placeholder-label">App preview</span>
             </div>
             <span class="tag">Visibility</span>
             <h3>Clear monthly visibility</h3>
@@ -208,7 +188,7 @@
                 <div class="benefit-card-device-line line-mid"></div>
                 <div class="benefit-card-device-line line-short"></div>
               </div>
-              <span class="benefit-card-placeholder-label">App image placeholder</span>
+              <span class="benefit-card-placeholder-label">App preview</span>
             </div>
             <span class="tag">Shared</span>
             <h3>Shared finance made simple</h3>
@@ -223,7 +203,9 @@
         <article class="demo-feature-card">
           <div class="demo-poster">
             <img src="clipledger_landing_assets/feature-showcase-capture-flow.png" width="840" height="840" alt="Monely product flow showing receipt capture, confirmation, and finance views across iPhone screens." loading="lazy" decoding="async">
-            <span class="demo-play">30-second product flow</span>
+            <button class="demo-play" type="button" data-demo-trigger data-demo-location="demo_card" aria-label="Play 30-second demo">
+              30-second product flow
+            </button>
           </div>
           <div class="demo-copy">
             <span class="icon-chip">Demo</span>
@@ -302,12 +284,37 @@
     </section>
 
     <section class="section">
+      <div class="container email-capture-shell">
+        <div class="section-head">
+          <span class="eyebrow">Email updates</span>
+          <h2>Get launch updates and money tips</h2>
+          <p>Be the first to hear about new Monely features, product updates, and smarter ways to track your money.</p>
+        </div>
+
+        <form class="email-capture-form" data-email-capture-form novalidate>
+          <label class="sr-only" for="email-capture-input">Email address</label>
+          <input
+            id="email-capture-input"
+            data-email-capture-input
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          >
+          <button class="button primary" data-email-capture-submit type="submit">Join the list</button>
+        </form>
+        <p class="email-capture-status" data-email-capture-status role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section class="section">
       <div class="container cta-shell final-cta-shell">
         <span class="eyebrow">Ready to start?</span>
         <h2>Download Monely and keep expense tracking quick from the first receipt onward.</h2>
         <p>Monely for iPhone brings smart receipt capture, clearer monthly visibility, and shared finance into one cleaner workflow.</p>
         <div class="link-cluster actions center">
-          <a class="app-store-link final-store-cta" data-app-store-link href="#" aria-label="Download on the App Store">
+          <a class="app-store-link final-store-cta" data-app-store-link data-cta-location="final_cta" href="#" aria-label="Download on the App Store">
             <span class="sr-only">Download on the App Store</span>
             <img src="clipledger_landing_assets/app-store-badge.svg" width="560" height="180" alt="">
           </a>
@@ -327,7 +334,7 @@
       </div>
 
       <div class="footer-actions">
-        <a class="app-store-link footer-app-button" data-app-store-link href="#" aria-label="Download on the App Store">
+        <a class="app-store-link footer-app-button" data-app-store-link data-cta-location="footer" href="#" aria-label="Download on the App Store">
           <span class="sr-only">Download on the App Store</span>
           <img src="clipledger_landing_assets/app-store-badge.svg" width="560" height="180" alt="">
         </a>
@@ -345,40 +352,6 @@
   </footer>
 
   <script src="site-config.js"></script>
-  <script>
-    (function () {
-      var siteConfig = window.MONELY_SITE || {};
-      var appStoreUrl = typeof siteConfig.appStoreUrl === "string" ? siteConfig.appStoreUrl.trim() : "";
-      var links = document.querySelectorAll("[data-app-store-link]");
-
-      links.forEach(function (link) {
-        if (appStoreUrl) {
-          link.setAttribute("href", appStoreUrl);
-          link.removeAttribute("aria-disabled");
-          link.classList.remove("is-disabled");
-          return;
-        }
-
-        link.setAttribute("href", "#");
-        link.setAttribute("aria-disabled", "true");
-        link.classList.add("is-disabled");
-        link.addEventListener("click", function (event) {
-          event.preventDefault();
-        });
-      });
-    }());
-  </script>
+  <script src="site.js"></script>
 </body>
 </html>
-
-<!-- G-Q8DZ22RE57
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const appStoreLink = document.querySelector("[data-app-store-link]");
-    if (appStoreLink) {
-      appStoreLink.addEventListener("click", function (event) {
-        event.preventDefault();
-      });
-    }
-  });
-</script> -->
