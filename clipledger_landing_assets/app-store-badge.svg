@@ -3,16 +3,10 @@
   <desc id="badgeDesc">Black App Store download badge with Apple mark and label.</desc>
   <rect x="3" y="3" width="554" height="174" rx="28" fill="#000"/>
   <rect x="3" y="3" width="554" height="174" rx="28" stroke="#A6A6A6" stroke-width="6"/>
-
-  <g transform="translate(48 24)">
-    <ellipse cx="42" cy="64" rx="28" ry="33" fill="#fff"/>
-    <ellipse cx="78" cy="60" rx="34" ry="39" fill="#fff"/>
-    <ellipse cx="60" cy="98" rx="41" ry="47" fill="#fff"/>
-    <circle cx="99" cy="58" r="13" fill="#000"/>
-    <ellipse cx="60" cy="27" rx="12" ry="8" fill="#000"/>
-    <path d="M59 24C60 11 72 2 84 4C83 16 73 28 60 30C58 28 58 26 59 24Z" fill="#fff"/>
+  <g transform="translate(46 28) scale(4.65)" fill="#fff">
+    <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09z"/>
+    <path d="M15.53 3.828c.843-1.012 1.4-2.427 1.245-3.828-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.686 1.338.104 2.715-.688 3.559-1.701"/>
   </g>
-
   <text x="185" y="74" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="500" letter-spacing="0.01em">Download on the</text>
   <text x="185" y="132" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700" letter-spacing="-0.03em">App Store</text>
 </svg>
